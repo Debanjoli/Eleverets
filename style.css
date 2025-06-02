@@ -55,6 +55,7 @@ header{
 header>div>div{
     justify-content: space-between;
     align-items: center;
+    padding: 0 15px;
 
     opacity: 0;
     transform: translateY(-20px);
@@ -114,7 +115,8 @@ nav>ul{
 .col-6_1{
     display: flex;
     gap: 77px;
-    margin-block: 50px;
+    margin-bottom: 50px;
+    
     align-items: center;
     width: 50%;
 }
@@ -155,7 +157,7 @@ input[type="text"], input[type="tel"], input[type="email"], textarea{
     padding-block: 5px;
     border-radius: 5px;
     border: 1px solid #B8B8B8;
-    max-width: 114px;
+    max-width: 137px;
 }
 
 #name::placeholder, #phone::placeholder, #email::placeholder, #message::placeholder{
@@ -341,6 +343,7 @@ input[type="text"], input[type="tel"], input[type="email"], textarea{
 
     #hamberger:checked~.nav_items{
         display: flex!important;
+        
     }
 
     nav>ul{
@@ -376,17 +379,49 @@ input[type="text"], input[type="tel"], input[type="email"], textarea{
 }
 
 
-@media screen and (max-width:422px){
+@media screen and (max-width:330px){
     .banner_content_left>h1{
         font-size: 43px;
         /* text-align: center; */
         line-height: 48px;
-        max-width: 100px;
+        /* max-width: 100px; */
+        width: 100%;
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    .banner_content_left>p{
+        text-align: center;
+        padding: 0 15px;
+        font-size: 12px;
+
+    }
+
+    .banner_content_left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .btn{
+        padding: 9.5px 36.5px;
+        font-size: 15px ;
+    }
+
+    .col-6_1{
+        width: 100%;
+    }
+
+    .about_img img{
+        padding: 0 15px;
     }
 
     .banner_content_right{
         width: 100%;
         padding: 10px;
+        margin: 10px;
     }
 
     .banner_content_left>p{
@@ -395,26 +430,44 @@ input[type="text"], input[type="tel"], input[type="email"], textarea{
         margin-top: 15px;
     }
 
-    .about_content>h2{
+    .about_content>h2 {
         text-align: center;
-        font-size: 43px;
+        font-size: 32px;
+        margin-top: -31px;
     }
 
     .about_content{
         align-items: center;
     }
 
-    .about_content>p{
-        font-size: 15px;
+    .about_content>p {
+        font-size: 12px;
         text-align: center;
+        padding: 0 15px;
     }
 
+    .about_btn{
+        padding: 9.5px 30px;
+    }
+
+    .loan_products>div>div{
+        padding-top: 54px;
+    }
+
+
     .loan_products>div>div>h2{
-        font-size: 43px;
+        font-size: 37px;
     }
 
     .loan_products>div>div>p{
-        font-size: 15px;
+        font-size: 12px;
+        padding: 0 15px;
+        margin-top: 20px;
+    }
+
+    .col-4{
+        width: 100%;
+        margin: 0 15px;
     }
 
     .card_content {
